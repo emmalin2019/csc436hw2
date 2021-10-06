@@ -1,11 +1,18 @@
+import {useState, useReducer, useEffect} from 'react';
 
 import MyName from './MyName'
 import UserBar from './user/UserBar'
 import CreateTodo from './CreateTodo'
 import TodoList from './TodoList'
+import {id, appReducer} from './reducers';
+//import id from './reducers'
 
+//~ function id() {
+	//~ // Returns random id number
+	//~ return window.crypto.getRandomValues(new Uint32Array(1))[0];
+//~ }
 function App() {
-  const todos = [
+  const initialTodos = [
     {
       title: "My Todo1",
       description: "Read more",
@@ -13,6 +20,8 @@ function App() {
       dateCreated: Date.now()-1000000000000,
       complete: false,
       dateCompleted: null,
+      id: id(),
+      hidden: false
     },
     {
       title: "My Todo2",
@@ -21,6 +30,8 @@ function App() {
       dateCreated: Date.now()-1000000000000,
       complete: false,
       dateCompleted: null,
+      id: id(),
+      hidden: false
     },
     {
       title: "My Todo3",
@@ -29,6 +40,8 @@ function App() {
       dateCreated: Date.now()-1000000000000,
       complete: false,
       dateCompleted: null,
+      id: id(),
+      hidden: false
     },
     {
       title: "My Todo4",
@@ -37,6 +50,8 @@ function App() {
       dateCreated: Date.now()-1000000000000,
       complete: false,
       dateCompleted: null,
+      id: id(),
+      hidden: false
     },
     {
       title: "My Todo5",
@@ -45,18 +60,34 @@ function App() {
       dateCreated: Date.now()-1000000000000,
       complete: true,
       dateCompleted: Date.now()-500000000000,
+      id: id(),
+      hidden: false
     }
   ]
-  console.log(todos);
+  
+  const [ state, dispatch ] = useReducer(
+	appReducer, { user: '', todos: initialTodos }
+  )
+
+  const {user, todos} = state;
+
+  useEffect(() => {
+    if (user) {
+       document.title = `${user}’s Blog` 
+     } else {
+       document.title = 'Blog'
+   }
+  }, [user])
+  
   return (
     <div>
-      <UserBar />
+      <UserBar user={user} dispatchUser={dispatch} />
       <br/><br/><hr/><br/> 
-      <CreateTodo user="Lin Lin" />
+      {user && <CreateTodo user={user} dispatch={dispatch} /> }
       <hr/>
-      <TodoList todos={todos} />
+      <TodoList todos={todos} dispatch={dispatch} />
     </div>
   )
 }
-
+      
 export default App;
