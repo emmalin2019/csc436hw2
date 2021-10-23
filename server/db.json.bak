@@ -1,0 +1,58 @@
+{
+  "todos":  [
+       {
+         title: "My Todo1",
+         description: "Read more",
+         author: "Lin Lin",
+         dateCreated: 999999,
+         complete: false,
+         dateCompleted: null,
+         id: "ggjsgckashkh",
+         hidden: false
+       },
+       {
+         title: "My Todo2",
+         description: "Write more",
+         author: "Lin Lin",
+         dateCreated: 9999999,
+         complete: false,
+         dateCompleted: null,
+         id: "sadasfkola",
+         hidden: false
+       }
+     ],
+  "users": [
+    {
+      "id": 1,
+      "username": "a",
+      "password": "test"
+    },
+    {
+      "username": "newtestuser",
+      "password": "test",
+      "id": 2
+    },
+    {
+      "username": "newuser",
+      "password": "test",
+      "id": 3
+    }
+  ],
+  "themes": [
+    {
+      "id": 1,
+      "primaryColor": "deepskyblue",
+      "secondaryColor": "coral"
+    },
+    {
+      "id": 2,
+      "primaryColor": "orchid",
+      "secondaryColor": "mediumseagreen"
+    },
+    {
+      "id": 3,
+      "primaryColor": "darkslategray",
+      "secondaryColor": "slategray"
+    }
+  ]
+}

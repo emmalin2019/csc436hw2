@@ -1,0 +1,133 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "complete": true,
+      "dateCompleted": 1634955756559,
+      "title": "i",
+      "description": "iujiuh",
+      "author": "a",
+      "dateCreated": 1634873345765,
+      "hidden": false
+    },
+    {
+      "title": "ssss",
+      "description": "ssss",
+      "author": "a",
+      "dateCreated": 1634955861603,
+      "complete": false,
+      "dateCompleted": null,
+      "hidden": false,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "complete": true,
+      "dateCompleted": 1634955874329,
+      "title": "ssssssss",
+      "description": "aas",
+      "author": "a",
+      "dateCreated": 1634955867300,
+      "hidden": false
+    },
+    {
+      "title": "ss44",
+      "description": "33",
+      "author": "a",
+      "dateCreated": 1634955893259,
+      "complete": false,
+      "dateCompleted": null,
+      "hidden": false,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "complete": true,
+      "dateCompleted": 1634955957473,
+      "title": "erer",
+      "description": "aefrew",
+      "author": "a",
+      "dateCreated": 1634955933928,
+      "hidden": false
+    },
+    {
+      "id": 6,
+      "complete": true,
+      "dateCompleted": 1634956144889,
+      "title": "a666",
+      "description": "666",
+      "author": "a",
+      "dateCreated": 1634956031697,
+      "hidden": false
+    },
+    {
+      "id": 7,
+      "complete": true,
+      "dateCompleted": 1634956150733,
+      "title": "7777",
+      "description": "7777",
+      "author": "a",
+      "dateCreated": 1634956071113,
+      "hidden": false
+    },
+    {
+      "title": "88",
+      "description": "8888",
+      "author": "a",
+      "dateCreated": 1634956192406,
+      "complete": false,
+      "dateCompleted": null,
+      "hidden": false,
+      "id": 8
+    },
+    {
+      "title": "ssssss0",
+      "description": "s",
+      "author": "a",
+      "dateCreated": 1634956525857,
+      "complete": false,
+      "dateCompleted": null,
+      "hidden": false,
+      "id": 9
+    },
+    {
+      "title": "aaaa",
+      "description": "aaa",
+      "author": "a",
+      "dateCreated": 1634956536696,
+      "complete": false,
+      "dateCompleted": null,
+      "hidden": false,
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "username": "test",
+      "password": "t",
+      "id": 1
+    },
+    {
+      "username": "a",
+      "password": "a",
+      "id": 2
+    }
+  ],
+  "themes": [
+    {
+      "id": 1,
+      "primaryColor": "deepskyblue",
+      "secondaryColor": "coral"
+    },
+    {
+      "id": 2,
+      "primaryColor": "orchid",
+      "secondaryColor": "mediumseagreen"
+    },
+    {
+      "id": 3,
+      "primaryColor": "darkslategray",
+      "secondaryColor": "slategray"
+    }
+  ]
+}
